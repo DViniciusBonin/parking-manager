@@ -60,8 +60,7 @@
             </div>
         </div>
     </div>
-    Contador Global: ${counterApplication}
-    Contador Sessão: ${counterSession}
+
 </nav>
 
 <div>

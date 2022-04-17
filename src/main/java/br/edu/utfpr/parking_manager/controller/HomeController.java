@@ -22,7 +22,7 @@ public class HomeController extends HttpServlet {
             counterApplication = 0;
         }
         counterApplication++;
-
+        System.out.println("Sessões na aplicação desde que foi iniciada = " + counterApplication);
         getServletContext().setAttribute(Constants.COUNTER_APPLICATION, counterApplication);
         //Escopo de sessao
         Integer counterSession = (Integer) request.getSession(true).getAttribute(Constants.COUNTER_SESSION);

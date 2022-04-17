@@ -25,6 +25,6 @@ public class RegisterDepartureController extends HttpServlet {
         car.setParked(false);
         this.carService.update(car);
         request.setAttribute("flash.car", car);
-        response.sendRedirect("car");
+        response.sendRedirect("carro?id=" + car.getId());
     }
 }
